@@ -45,7 +45,6 @@ libharfbuzz-dev \
 htop \
 libicu-dev \
 imagemagick \
-libjasper-dev \
 libjpeg-turbo8-dev \
 jq \
 lame \
@@ -85,21 +84,14 @@ mpdecimal \
 mpg123 \
 nano \
 libncurses-dev \
-libnettle-dev \
 nodejs \
 ntfs-3g \
-oniguruma-dev \
 libopencore-amrnb-dev \
 libopenexr-dev \
-libopenjpeg-dev \
 libopus-dev \
 p11-kit-modules \
 libpango1.0-dev \
 libpcre2-dev \
-pixman \
-python3.11 \
-python3.12 \
-rav1e \
 libreadline-dev \
 ripgrep \
 rubberband-cli \
@@ -109,24 +101,19 @@ shared-mime-info \
 libsnappy-dev \
 libspeex-dev \
 libsqlite3-dev \
-libsrt-dev \
 svt-av1 \
 telnet \
 tesseract-ocr \
-theora-dev \
 tmux \
 unbound \
-utf8proc-dev \
 visidata \
 webp \
 wget \
 libx264-dev \
 libx265-dev \
 xorg-dev \
-xvidcore-dev \
 xz-utils \
 libzmq3-dev \
-zimg-dev \
 zoxide \
 zstd
 
@@ -138,7 +125,7 @@ echo "export HF_HUB_ENABLE_HF_TRANSFER=1" >> /root/.bashrc
 # 3) Install CUDA instead of relying on template
 wget https://developer.download.nvidia.com/compute/cuda/12.1.0/local_installers/cuda_12.1.0_530.30.02_linux.run
 sudo sh cuda_12.1.0_530.30.02_linux.run
-sudo apt-get install nvidia-cuda-toolkit
+sudo apt-get install -y nvidia-cuda-toolkit
 
 # Source
 source /root/.bashrc
