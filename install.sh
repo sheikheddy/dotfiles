@@ -122,6 +122,11 @@ zstd
 echo "export HF_HOME=/workspace/hf" >> /root/.bashrc
 echo "export HF_HUB_ENABLE_HF_TRANSFER=1" >> /root/.bashrc
 
+# 3) Install CUDA instead of relying on template
+wget https://developer.download.nvidia.com/compute/cuda/12.1.0/local_installers/cuda_12.1.0_530.30.02_linux.run
+sudo sh cuda_12.1.0_530.30.02_linux.run
+sudo apt-get install -y nvidia-cuda-toolkit
+
 # Source
 source /root/.bashrc
 
